@@ -1,6 +1,6 @@
 DependencyResolver - Minecraft Tweaker
 ===============================
-Version: x.y
+[Version: 1.0][download]
 
 
 0. 既知の不具合
@@ -17,12 +17,15 @@ Version: x.y
 ---------------
 
   - 事前に [Minecraft Forge][forge] をインストールしておいてください
-  - ダウンロードした jar ファイルを mods フォルダに配置します
+  - [ダウンロード][download]した jar ファイルを mods フォルダに配置します
   - 作業は以上です
 
 
 3. 更新履歴
 -----------
+
+  - 1.0
+    - 公開
 
 
 4. ライセンス
@@ -44,4 +47,5 @@ Version: x.y
 
 [//]: # ( リンクのエイリアス一覧 )
 
+[download]: http://moj-files.x0.com/dresolver/DependencyResolver-1.0.jar
 [forge]:    http://files.minecraftforge.net/
