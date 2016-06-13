@@ -1,0 +1,33 @@
+
+buildscript {
+  repositories {
+    jcenter()
+    maven {
+      name = "forge"
+      url = "http://files.minecraftforge.net/maven"
+    }
+  }
+  dependencies {
+    classpath 'net.minecraftforge.gradle:ForgeGradle:2.2-SNAPSHOT'
+  }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'scala'
+
+version = "1.0"
+group = "com.manofj.minecraft.moj_dresolver"
+archivesBaseName = "DependencyResolver"
+
+minecraft {
+  version = "1.9.4-12.17.0.1940"
+  runDir = "run"
+  mappings = "snapshot_20160518"
+}
+
+jar.manifest.attributes = [
+  TweakClass: 'com.manofj.minecraft.moj_dresolver.launcher.DependencyResolver',
+  TweakOrder: -1
+]
+
+dependencies {}
+processResources {}
