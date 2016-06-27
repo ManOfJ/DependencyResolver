@@ -4,6 +4,7 @@ package com.manofj.minecraft.moj_dresolver.gson;
 public class MavenData {
 
     private String url;
+    private String name;
     private String groupId;
     private String artifactId;
     private String version;
@@ -12,6 +13,10 @@ public class MavenData {
 
     public String getUrl() {
         return url;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public String getGroupId() {
@@ -31,11 +36,15 @@ public class MavenData {
     }
 
 
-    public void setUrl(String url) {
+    public void setUrl( String url ) {
         this.url = url;
     }
 
-    public void setGroupId(String groupId ) {
+    public void setName( String name ) {
+        this.name = name;
+    }
+
+    public void setGroupId( String groupId ) {
         this.groupId = groupId;
     }
 
@@ -56,6 +65,7 @@ public class MavenData {
     public int hashCode() {
         int result = 1;
         result = result * 31 + ( url != null ? url.hashCode() : 0 );
+        result = result * 31 + ( name != null ? name.hashCode() : 0 );
         result = result * 31 + ( groupId != null ? groupId.hashCode() : 0 );
         result = result * 31 + ( artifactId != null ? artifactId.hashCode() : 0 );
         result = result * 31 + ( version != null ? version.hashCode() : 0 );
@@ -70,6 +80,7 @@ public class MavenData {
 
         MavenData other = ( MavenData )obj;
         return this.url == null ? other.url == null : this.url.equals( other.url )
+            && this.name == null ? other.name == null : this.name.equals( other.name )
             && this.groupId == null ? other.groupId == null : this.groupId.equals( other.groupId )
             && this.artifactId == null ? other.artifactId == null : this.artifactId.equals( other.artifactId )
             && this.version == null ? other.version == null : this.version.equals( other.version )
