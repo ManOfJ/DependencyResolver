@@ -1,30 +1,38 @@
 DependencyResolver - Minecraft Tweaker
-===============================
-[Version: 1.0][download]
+======================================
+Version: Universal-1.1
 
 
-0. 既知の不具合
----------------
-
-
-1. 概要
+0. 概要
 -------
 
   - jar アーカイブ内の情報を元に Mod の依存関係を解決する
+
+
+1. 既知の不具合
+---------------
+
+  - [Issues](../../issues) を参照してください
 
 
 2. インストール
 ---------------
 
   - 事前に [Minecraft Forge][forge] をインストールしておいてください
-  - [ダウンロード][download]した jar ファイルを mods フォルダに配置します
+    - DependencyResolver は Minecraft 本体のクラスを参照しないため Minecraft Forge 側で仕様変更がなされない限り､バージョンに関係なく動作します
+  - [ダウンロード][homepage]した jar ファイルを mods フォルダに配置します
   - 作業は以上です
 
 
 3. 更新履歴
 -----------
 
-  - 1.0
+  - Universal-1.1
+    - 内部処理の変更
+    - ログファイルへ情報を出力するようにした
+
+
+  - Universal-1.0
     - 公開
 
 
@@ -33,7 +41,7 @@ DependencyResolver - Minecraft Tweaker
 
 (c) Man of J, 2016
 
-この Mod は [Minecraft Mod Public License - Version 1.0.1](./LICENSE.md) のもとで提供されています
+この Tweaker は [Minecraft Mod Public License - Version 1.0.1](./LICENSE.md) のもとで提供されています
 
 
 ********************************
@@ -42,10 +50,9 @@ DependencyResolver - Minecraft Tweaker
   - E-mail: <man.of.j@outlook.com>
   - Twitter: [_ManOfJ](https://twitter.com/_ManOfJ)
 
-
 ********************************
 
 [//]: # ( リンクのエイリアス一覧 )
 
-[download]: http://moj-files.x0.com/dresolver/DependencyResolver-1.0.jar
 [forge]:    http://files.minecraftforge.net/
+[homepage]: http://manofj.com/minecraft/

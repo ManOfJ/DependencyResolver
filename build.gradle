@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'scala'
 
-version = "1.0"
+version = "Universal-1.1"
 group = "com.manofj.minecraft.moj_dresolver"
 archivesBaseName = "DependencyResolver"
 
@@ -25,7 +25,7 @@ minecraft {
 }
 
 jar.manifest.attributes = [
-  TweakClass: 'com.manofj.minecraft.moj_dresolver.launcher.DependencyResolver',
+  TweakClass: 'com.manofj.minecraft.moj_dresolver.launcher.DependencyResolverTweaker',
   TweakOrder: -1
 ]
 
