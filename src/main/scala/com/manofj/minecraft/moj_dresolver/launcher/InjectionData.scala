@@ -1,23 +1,22 @@
 package com.manofj.minecraft.moj_dresolver.launcher
 
 import java.io.File
-import java.net.URL
+
+import net.minecraft.launchwrapper.{LaunchClassLoader => LaunchClazzLoader}
 
 
 object InjectionData {
 
-  case class MinecraftDir( data: File ) extends InjectionData[ File ]
+  case class MinecraftDirectory( data: File ) extends InjectionData[ File ]
 
-  case class LibrariesDir( data: File ) extends InjectionData[ File ]
+  case class LibrariesDirectory( data: File ) extends InjectionData[ File ]
 
-  case class ModsDir( data: File ) extends InjectionData[ File ]
+  case class ModsDirectory( data: File ) extends InjectionData[ File ]
+
+  case class LaunchClassLoader( data: LaunchClazzLoader ) extends InjectionData[ LaunchClazzLoader ]
 
   case class DefaultLibraries( data: Seq[ String ] ) extends InjectionData[ Seq[ String ] ]
 
-  case class ResolvedURLs( data: Seq[ URL ] ) extends InjectionData[ Seq[ URL ] ]
-
 }
 
-trait InjectionData[ A ] {
-  def data: A
-}
+sealed trait InjectionData[ A ] { def data: A }
