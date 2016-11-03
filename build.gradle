@@ -14,20 +14,18 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'scala'
 
-version = "Universal-1.1"
+version = "Universal-1.2"
 group = "com.manofj.minecraft.moj_dresolver"
 archivesBaseName = "DependencyResolver"
 
 minecraft {
-  version = "1.9.4-12.17.0.1940"
+  version = "1.10.2-12.18.1.2092"
   runDir = "run"
   mappings = "snapshot_20160518"
 }
 
-jar.manifest.attributes = [
-  TweakClass: 'com.manofj.minecraft.moj_dresolver.launcher.DependencyResolverTweaker',
-  TweakOrder: -1
-]
+jar.manifest.attributes( 'TweakClass': 'com.manofj.minecraft.moj_dresolver.launcher.DependencyResolver',
+                         'TweakOrder': -1 )
 
 dependencies {}
 processResources {}
